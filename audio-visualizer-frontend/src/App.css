@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  background: radial-gradient(circle at center, #111 0%, #000 70%);
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont;
+  overflow: hidden;
+}
+
+.app {
+  width: 100vw;
+  height: 100vh;
+}
+.visualizer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+.transcript {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 80%;
+  padding: 16px 24px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  border-radius: 12px;
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+  transition: all 0.3s ease;
+}
+.transcript:hover {
+  background: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.8);
+}
+.transcript p {
+  margin: 0;
+}
+button.start-button {
+  position: fixed;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 12px 24px;
+  font-size: 16px;
+  color: #fff;
+  background: #1e90ff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(30, 144, 255, 0.4);
+  transition: all 0.3s ease;
+}
